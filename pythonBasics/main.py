@@ -1,7 +1,7 @@
 # Basic Python program for beginners. It contains basics with While Loop
 import helper
 
-print("Hello\nworld")
+print("Hello\nworld Python application")
 
 print(bool(1))
 a=5
