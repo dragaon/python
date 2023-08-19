@@ -1,10 +1,13 @@
 # Basic Python program for beginners. Code contains
 # 1. Print statement, Using If, While loop, user input
 # 2. Defining function
-# 3. Importing other python functions
+# 3. Importing other modules (i.e. other python files)
 # 4. Basic exception handling
 
 import helper
+import logging
+
+logger = logging.getLogger("Main")
 
 print("Hello\nworld Python application")
 print(bool(1))
@@ -28,6 +31,7 @@ if user_input.isdigit():
     print(f"{user_input} day(s) = {helper.days_to_units(user_input, units)} {units}")
 else:
     helper.logMsgNewLine("User Validation failed. Please enter positive number > 0")
+    logger.error(f"ERROR: User Validation failed. Please enter positive number > 0")
 
 user_input = ""
 

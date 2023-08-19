@@ -1,5 +1,6 @@
 # Sample code which contains usage of
-# List, Sets and For loop
+# List, Sets, For loop and import needed functions from module
+
 from helper import  validateInput, user_message
 
 # List data type. Ordered sequence
@@ -42,6 +43,6 @@ set_of_employees.add("Mumbai")
 #Try adding duplicate value
 set_of_employees.add("Mumbai")
 
-print(f"Employee list after adding duplicate values : {set_of_employees}")
-set_of_employees.remove(10)
-print(f"Employee list after removing element value 10 : {set_of_employees}")
+print(f"Employee set after adding duplicate values : {set_of_employees}")
+set_of_employees.remove("10")
+print(f"Employee set after removing element value 10 : {set_of_employees}")
