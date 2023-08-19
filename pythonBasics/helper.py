@@ -1,12 +1,22 @@
 # Reusable functions which can be used and imported by other python programs
+
+#Global variable
+user_message = "Please enter comma separated values to create a list\n"
+
+#Function returns by converting number of days to the given units ie. minutes or seconds
 def days_to_units(num_days, units):
     if num_days > 0:
-        result = num_days * 60 * 60
-        return f"In function Hours {result} {units}"
+        match units:
+            case "seconds":
+                return num_days * 24 * 60 * 60
+            case "minutes":
+                return num_days * 24 * 60
+            case default:
+                return -1
     elif num_days == 0:
-        return "Please enter positive number > 0"
+        return num_days
     else:
-        return "Please enter positive number"
+        return -1
 
 
 def add(a, b):
@@ -23,9 +33,10 @@ def add(a, b):
 def validateInput(inputValue):
     try:
         int(inputValue)
-        return f"Entered input value {inputValue} is an integer"
+        return bool(1)
     except:
-        return f"Entered input value {inputValue} is not an integer"
+        return bool(0)
 
 
-user_message = "Please enter the list\n"
+def logMsgNewLine(message):
+    print(f"{message} \n")
