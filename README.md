@@ -1,7 +1,11 @@
 # python
 This repo contains python progarm exmaple
 
-1) 
+1) Basic syntax like varibles, Loops, set, list, dictionaries
+2) Try catch finally
+3) Packages and classes
+4) numpy examples
+5) 
 
 
 TODO
