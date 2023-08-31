@@ -125,3 +125,6 @@ print(f"Array with 3 X 3 is {flatten_demo} and after using flatten is "
       f"{np.ndarray.flatten(flatten_demo, order='C')}")
 print(f"Array with 3 X 3 is {flatten_demo} and after using flatten is "
       f"{np.ndarray.flatten(flatten_demo, order='F')}")
+
+print(f"Generating elements using Arrange {np.arange(2,4,.5)}\n "
+      f"and type is {type(np.arange(2,4,.5))}")
